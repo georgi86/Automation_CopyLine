@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="7.0">
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="CopyLine"
+      id="68e2eef4-41f2-4945-8dd5-0be1b2bf08d6"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="CopyLine"
+      id="68e2eef4-41f2-4945-8dd5-0be1b2bf08d6"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>
