@@ -106,8 +106,8 @@ namespace CopyLine
             Keyboard.Press("{Delete}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'D:\\Joro\\GIT_Automation_MX\\Line\\CopyLine.mxi'.", new RecordItemIndex(6));
-            Keyboard.Press("D:\\Joro\\GIT_Automation_MX\\Line\\CopyLine.mxi");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'D:\\Joro\\GIT_Automation_MX\\Automation_CopyLine\\Routine\\CopyLine.mxi'.", new RecordItemIndex(6));
+            Keyboard.Press("D:\\Joro\\GIT_Automation_MX\\Automation_CopyLine\\Routine\\CopyLine.mxi");
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}'.", new RecordItemIndex(7));
@@ -164,13 +164,11 @@ namespace CopyLine
 
 
 
-            string strActualValues = "D:\\Joro\\GIT_Automation_MX\\ActualValues.STA";
-            string strHardcodedValues= "D:\\Joro\\GIT_Automation_MX\\HardcodedValues.STA";  
-            
+            string strActualValues = "D:\\Joro\\GIT_Automation_MX\\Automation_CopyLine\\Reports\\ActualValues.STA";       //with the folowing 4 lines on this code we finding (we have the path) and reading into these files (ActualVAlues.STA and hardcodedVAlues.STA)
+            string strHardcodedValues= "D:\\Joro\\GIT_Automation_MX\\Automation_CopyLine\\Reports\\HardcodedValues.STA";             
           
             string[] readActualLines = File.ReadAllLines(strActualValues);
-            string[] readHardcodedLines = File.ReadAllLines(strHardcodedValues);
-                   
+            string[] readHardcodedLines = File.ReadAllLines(strHardcodedValues);                  
             
 
             int iResultsLines = readHardcodedLines.Length;
@@ -200,13 +198,7 @@ namespace CopyLine
                 }
             }
 
-            Delay.Milliseconds(100);
-
-
-
-            //Report.Log(ReportLevel.Info, "Application", "Run application 'yourapp' with arguments '' in normal mode.", new RecordItemIndex(20));
-            //Host.Local.RunApplication("yourapp", "", "", false);
-            //Delay.Milliseconds(0);
+            Delay.Milliseconds(100);            
 
         }
 
